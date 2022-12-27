@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Spotify Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+  
+  <div class="bg-dark">      
+    <form action="/" method="POST">      
+      <div class="container">
+        <br>
+        <!-- <img src="https://www.pngitem.com/pimgs/m/148-1487614_spotify-logo-small-spotify-logo-transparent-hd-png.png"> -->
+        <a class="link-success" href="/"><h1 class="p-3 text-white" href="/">Spotify</h1></a>
+        <br>
+        
+        <div class="container">
+          <div class="row justify-content-end">
+            <div class="col-4">
+              <a class="btn btn-success btn-md" href="/addSong">Add Music</a>
+              <a class="btn btn-success btn-md" href="/list">See your Playlist</a>
+            </div>
+          </div>
+        </div>
+        <br>
+      </div>
+      <br>
+      <br>
+      {% block content %} 
+      {% endblock %}
+    </form>
+  </div>
+    <script src="../static/css/bootstrap.min.css"></script>
+    <script src="../static/css/bootstrap.min.css.map"></script>
+</body>
+</html>
